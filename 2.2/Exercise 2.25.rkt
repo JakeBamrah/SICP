@@ -1,0 +1,22 @@
+; Exercise 2.25 - give combinations of car and cdr
+; that pick 7 from the given lists
+
+; (1 3 (5 7) 9)
+(car (cdr (car (cdr (cdr `(1 3 (5 7) 9))))))
+
+; ((7))
+(car (car '((7))))
+
+; (1 (2 (3 (4 (5 (6 7))))))
+ (car 
+  (cdr 
+   (car 
+    (cdr 
+     (car 
+      (cdr 
+       (car 
+        (cdr 
+         (car 
+          (cdr 
+           (car 
+            (cdr '(1 (2 (3 (4 (5 (6 7)))))))))))))))))) 
